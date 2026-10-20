@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Catalog - Yannis Maritime Service</title>
+    <link rel="icon" type="image/png" href="images/company-logo.png">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <img class="logo-image" src="images/company-logo.png" alt="Yannis Maritime Services logo" />
+            <span class="logo-text"
+              >Yannis <span class="logo-accent">Maritime Service Nig. Ltd.</span></span
+            >
+          </div>
+
+          <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#products" class="dropdown-toggle" aria-expanded="false">Products</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="catalog.html?category=ship%20chandling">Ship Chandling &amp; Marine Supplies</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=engines">Engine &amp; Mechanical Services</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=cleaning">Cleaning &amp; Fumigation</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=lubrication">Lubricating Oil &amp; Marine Chemicals</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=water%20supply">Fresh Water Supply</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=marine%20service">General Marine Services</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="yannis-contact.html">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+            <li>
+              <a href="dashboard.html" class="btn-dashboard">Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section">
+      <div class="container">
+        <h1>Product & Services</h1>
+
+        <div class="catalog-wrapper">
+          <!-- Filter Section -->
+          <aside class="filters">
+            <h3>Filter Products</h3>
+            <div class="filter-group">
+              <label>Category</label>
+              <select id="categoryFilter" onchange="filterProducts()">
+                <option value="">All Categories</option>
+                <option value="ship chandling">Ship Chandling & Marine Supplies</option>
+                <option value="engines">Engine & Mechanical Services</option>
+                <option value="cleaning">Cleaning & Fumigation</option>
+                <option value="lubrication">Lubricating Oil & Marine Chemicals</option>
+                <option value="water supply">Fresh water Supply</option>
+                <option value="marine service">General Marine Services</option>
+              </select>
+            </div>
+          </aside>
+
+          <!-- Products Grid -->
+          <main class="products-grid">
+            <div id="productsContainer" class="grid">
+              <!-- Products will be loaded here by JavaScript -->
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Yannis Maritime Service</h4>
+            <p>
+              Leading provider of premium ship chandling supplies and maritime
+              logistics solutions worldwide.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catalog.html">Catalog</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="yannis-contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Shop</h4>
+            <ul>
+              <li>
+                <a href="catalog.html?category=ship%20chandling">Ship Chandling &amp; Marine Supplies</a>
+              </li>
+              <li>
+                <a href="catalog.html?category=engines">Engine &amp; Mechanical Services</a>
+              </li>
+              <li>
+                <a href="catalog.html?category=cleaning">Cleaning &amp; Fumigation</a>
+              </li>
+              <li>
+                <a href="catalog.html?category=lubrication">Lubricating Oil &amp; Marine Chemicals</a>
+              </li>
+              <li>
+                <a href="catalog.html?category=water%20supply">Fresh Water Supply</a>
+              </li>
+              <li>
+                <a href="catalog.html?category=marine%20service">General Marine Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>📍 38, Bombay Crescent, Apapa, Lagos.</p>
+            <p>📞 +234 909 0604 732</p>
+            <p>📞 +234 803 3017 079</p>
+            <a href="mailto:abiloughe@yahoo.com">
+              📩 abiloughe@yahoo.com
+            </a> <br>
+            <a href="mailto:yannismarineservice@gmail.com">
+              📩 yannismarineservice@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Yannis Maritime Service. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Yannis Maritime Service for ship chandling, marine supplies, and service inquiries."
+    />
+    <title>Contact Us - Yannis Maritime Service</title>
+    <link rel="icon" type="image/png" href="images/company-logo.png">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a class="logo" href="index.html" aria-label="Yannis Maritime Services home">
+            <img class="logo-image" src="images/company-logo.png" alt="" />
+            <span class="logo-text">
+              Yannis
+              <span class="logo-accent">Maritime Services Nig. Ltd.</span>
+            </span>
+          </a>
+          <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#products" class="dropdown-toggle" aria-expanded="false">Products</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="catalog.html?category=ship%20chandling">Ship Chandling &amp; Marine Supplies</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=engines">Engine &amp; Mechanical Services</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=cleaning">Cleaning &amp; Fumigation</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=lubrication">Lubricating Oil &amp; Marine Chemicals</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=water%20supply">Fresh Water Supply</a>
+                </li>
+                <li>
+                  <a href="catalog.html?category=marine%20service">General Marine Services</a>
+                </li>
+              </ul>
+            </li>           
+            <li><a href="yannis-contact.html">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+            <li>
+              <a href="dashboard.html" class="btn-dashboard">Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="contact-page">
+      <div class="container contact-layout">
+        <section class="contact-details" aria-labelledby="contact-title">
+          <h1 id="contact-title">Get In Touch</h1>
+
+          <div class="contact-detail">
+            <h2><span aria-hidden="true">📞</span> Telephone</h2>
+            <p><a href="tel:+2349090604732">+234 909 0604 732</a></p>
+            <p><a href="tel:+2348033017079">+234 803 3017 079</a></p>
+          </div>
+
+          <div class="contact-detail">
+            <h2><span aria-hidden="true">📧</span> Email</h2>
+            <p><a href="mailto:yannismarineservice@gmail.com">yannismarineservice@gmail.com</a></p>
+            <p><a href="mailto:abiloughe@yahoo.com">abiloughe@yahoo.com</a></p>
+          </div>
+
+          <div class="contact-detail">
+            <h2><span aria-hidden="true">📍</span> Office Location</h2>
+            <address>38, Bombay Crescent<br />Apapa, Lagos, Nigeria</address>
+          </div>
+
+          <div class="contact-detail">
+            <h2><span aria-hidden="true">🌐</span> Web</h2>
+            <p><a href="index.html">Yannis Maritime Services</a></p>
+          </div>
+        </section>
+
+        <section class="contact-form-section" aria-labelledby="message-title">
+          <h2 id="message-title">Send a Message</h2>
+          <p class="contact-form-note">
+            Submitting opens a prefilled message in WhatsApp and your email app.
+            Review and send it in both apps.
+          </p>
+          <form id="yannisContactForm" class="contact-form">
+            <div class="contact-form-field">
+              <label for="contactName">Full Name</label>
+              <input id="contactName" name="name" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="contact-form-field">
+              <label for="contactEmail">Email Address</label>
+              <input id="contactEmail" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="contact-form-field">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="Ship chandling and marine supplies">Ship Chandling &amp; Marine Supplies</option>
+                <option value="Product or service inquiry">Product or Service Inquiry</option>
+                <option value="Order and delivery">Order and Delivery</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="contact-form-field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="6" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2024 Yannis Maritime Service. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/yannis-contact.js"></script>
+  </body>
+</html>
